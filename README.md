@@ -1,2 +1,2 @@
-# django_2_calendar-_application
+# django_2_calendar_application
 django practice

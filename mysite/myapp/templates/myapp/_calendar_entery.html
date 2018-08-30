@@ -1,0 +1,10 @@
+<div class="calendar_entery col-md-4">
+    <br>
+    <h2>{{ entery.name }}</h2>
+    <h4>{{ entery.date }}</h4>
+    <p>
+        {{ entery.description }}
+    </p>
+    <a href="{% url 'details_myapp' pk=entery.id %}" class="btn btn-primary">View Details</a>
+    <button data-id="{{ entery.id }}" onclick="deleteCalendarEntery(this)" class="btn btn-danger">View Delete</button>
+</div>

@@ -28,6 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# LOGIN_RERIRECT_URL = '/calendar'
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',
+
 ]
 
 MIDDLEWARE = [

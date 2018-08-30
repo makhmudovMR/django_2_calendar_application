@@ -1,0 +1,17 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Login</h1>
+    <hr>
+    <form method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+            <label>{{ field.label }}</label>
+            <input name="{{ field.name }}" type="{{ filed.type }}" placeholder="{{ field.label }}" class="form-control">
+        {% endfor %}
+        <br>
+        <button type="submit" class="btn btn-info">Login</button>
+    </form>
+</div>
+{% endblock %}
